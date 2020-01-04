@@ -22,10 +22,10 @@ has_many users , has_many group_users , has_many messages
 |group_id |integer |null: false, foreign_key: true |
 |user_id  |integer |null: false, foreign_key: true |
 association
-belongs_to group , belongs_to user
+belongs_to :group , belongs_to :user
 
 ## group_users テーブル
 |group_id |integer |null: false, foreign_key: true |
 |user_id  |integer |null: false, foreign_key: true |
 association
-belongs_to group　, belongs_to user
+belongs_to :group , belongs_to :user
