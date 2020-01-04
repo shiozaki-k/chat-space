@@ -2,7 +2,6 @@
 ## users テーブル
 |column   |type    |options  |
 |-------  |--------|---------|
-|user_id  |integer |null: false  |
 |name     |string  |null: false  |
 |email    |string  |null: false  |
 
@@ -17,9 +16,9 @@
 |column   |type    |options  |
 |body     |text    |         |
 |image    |string  |         |
-|group_id |integer |null: false  |
-|user_id  |integer |null: false  |
+|group_id |integer |null: false, foreign_key: true |
+|user_id  |integer |null: false, foreign_key: true |
 
 ## group_users テーブル
-|group_id |integer |null: false  |
-|user_id  |integer |null: false  |
+|group_id |integer |null: false, foreign_key: true |
+|user_id  |integer |null: false, foreign_key: true |
