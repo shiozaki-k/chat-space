@@ -1,0 +1,51 @@
+.chat-main  
+  .main-header 
+    .left-box
+      .h1 test
+      .h2 Member:masa
+    .right-box
+      = link_to "#" do
+        .h1 EDIT
+       
+  .messages
+    .message-boxs
+      .message-box1
+        .h1 
+          masa
+          .a 
+            2019/12/20(wed) 17:00
+        .h2 
+          おはよう！
+      .message-box2
+        .h1 
+          masa
+          .a 
+            2019/12/222(fri) 17:09
+        .h2  
+          今夜は雨。
+  .form
+    .inner-box
+      .left-box
+        .text  
+          .p Type a message 
+          
+        
+
+        .image
+          %label{class: "input-box__image"}
+            = icon('fas', 'image' , class: "image_btn")
+            %input{ class: "hidden",type: "file"}
+           
+           
+      .right-box 
+        = link_to "#" do 
+          .h1 Send
+        
+     
+ 
+
+  
+
+
+ 
+  
