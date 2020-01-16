@@ -17,42 +17,32 @@
        height: 20px;
        width: 260px;
        margin: 0 auto;
-       position:absolute;
-       top:40%;
-       left:6%;
-       .top-items__name{
-         font-size: 16px;
-         color: white;
-         position: absolute;
-         left:20px;
-        }
-
-       &__icons{
-         background-color: #253141 ;
-          height: 20px ;
-          width: 60px ;  
-          position: absolute;
-          right: 0 ;
-         display: flex;
-         justify-content: flex-end; 
-          &-a{
-            color: white;
-              height: 10px;
-              
-          }
-          &-b{
-            color:  white;
-              height: 10px;
-              margin-left: 5px;
-              
-          }
-          
-          
-    } 
+       position: absolute;
+       top: 40px;
+       left: 6%;
+       display: flex;
+       .top-items_name{
+        font-size: 16px;
+        color: white;
        
+       }
+       .top-items_icons{
+         margin-left: 170px;
+         justify-content: flex-end;
+         .icon1{
+          color: white;
+         }
+         .icon2{
+          color: white;
+          margin-left: 5px;
+         
+          
+         } 
+      }
+    } 
      }  
   }
-}
+
 .groups{
   background-color: #2f3e51;
   height: calc(100vh-100px);
