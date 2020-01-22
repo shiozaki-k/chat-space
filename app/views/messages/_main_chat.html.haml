@@ -1,48 +1,27 @@
 .chat-main  
   .main-header 
-    .left-box
-      .h1 test
-      .h2 Member:masa
-    .right-box
+    .left-box test
+    - current_user.groups.each do |group|
+      .current-group masa
+     
+    .edit-btn
       = link_to "#" do
         .h1 EDIT
        
   .messages
-    .message-boxs
-      .message-box1
-        .h1 
-          masa
-          .a 
-            2019/12/20(wed) 17:00
-        .h2 
-          おはよう！
-      .message-box2
-        .h1 
-          masa
-          .a 
-            2019/12/222(fri) 17:09
-        .h2  
-          今夜は雨。
+    = render @messages 
+    .message
+      .upper-info
+        .talker
+        .date
+      .text
+      
   .form
-    .inner-box
-      .left-box
-        -# .text  
-        %input{type: "text", class:"text", placeholder: "type a message"}
-          
+    = form_for [ @group, @message] do |f|
+      .input-box
+        = f.text_field :content, placeholder: 'type a message'
         .image
-          %label{class: "input-box__image"}
-            = icon('fas', 'image' , class: "image_btn")
-            %input{ class: "hidden",type: "file"}
-           
-      .right-box 
-        = link_to "#" do 
-          .h1 Send
-        
-     
- 
-
-  
-
-
- 
-  
+          = f.label :image, class: 'new_message__image' do
+            = icon('fas', 'image', class: 'input-box')    
+            = f.file_field :image, class: 'hidden' 
+      = f.submit 'Send', class: 'submit_btn'
