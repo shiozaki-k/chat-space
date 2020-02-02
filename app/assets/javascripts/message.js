@@ -87,14 +87,14 @@ $(function(){
       //メッセージが入ったHTMLに、入れ物ごと追加
       $('.messages').append(insertHTML);
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
-   
+    console.log('success');
     }
   })
   .fail(function() {
-   
+    console.log('error');
   });
 };
 if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-  setInterval(reloadMessages, 3000);
+  setInterval(reloadMessages, 7000);
 }
 })
