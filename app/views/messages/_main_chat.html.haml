@@ -4,7 +4,7 @@
       %h3.group
         = @group.name
       %ul.main-header__left-box__member-list
-        Member:
+        .p Member:
         %li.group_users
           - @group.users.each do |user|
             = user.name
@@ -18,8 +18,8 @@
     .message
       .upper-info
         .talker
-        .date
-      .text
+        .data
+        .text
       
   .form
     = form_for [ @group, @message] do |f|

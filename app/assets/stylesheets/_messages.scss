@@ -10,25 +10,25 @@
    
     background-color: white;
     display: flex;
-    justify-content: space-between;
-    .left-box{
-      margin-top: 35px;
-      .current-group{
-          font-size: 20px;
-          font-weight: normal;
-          color: #333333;
-          margin-bottom: 15px;
-          box-sizing: border-box;
-          
-      }
-      .member-list{
+    // justify-content: space-between;
+     .left-box{
+       margin-top: 35px;
+       .group{
+         font-size: 20px;
+         color: #333333; 
+       }
+      
+      .main-header__left-box__member-list{
           height: 18px;
           width: 70px;
           font-size: 12px;
           color: #999999;
-          // list-style: none;
-          padding-inline-start: 40px;
-          // display: none; 
+          display: flex;
+          .group_users{
+            justify-content: space-between;
+            font-size: 12px;
+            color: #999999;
+          }
       }
      }
     .edit-btn{
@@ -37,7 +37,7 @@
       padding: 0 20px;
       margin-top: 30px;
       border: solid;
-      background-color: cyan;
+      color: #38AEF0;
       position: absolute;
       right: 40px;
       cursor: pointer;
@@ -57,26 +57,28 @@
       
         .upper-info{
           height: 18px;
-          width: auto644px;
+          width: 100%;
           padding-top: 35px;
           
           .talker{
             font-size: 16px;
             font-weight: bold;
-            color: #333333;
+            color: #434a54;
             display: flex;
-          .date{
-                font-size: 12px;
-                color: #999999;
-                justify-content: space-between;
-                padding-left: 16px;
+          .data{
+            font-size: 12px;
+            color: #999999;
+            justify-content: space-between;
+            // padding-left: 16px;
+            margin: 0, 0, 0, 10px;
               }
             }
-        }
-        .text{
-          color: black;
+        
+          .text{
+          color: ＃434a54;
           font-size: 14px;
           margin-bottom: 10px;
+          }
 
         }
      }
@@ -88,6 +90,7 @@
     background-color: #d2d2d2;
     padding:  20px 40px;
     display: flex;
+    position: fixed;
     .new_message {
       width: 100%;
       display: flex;

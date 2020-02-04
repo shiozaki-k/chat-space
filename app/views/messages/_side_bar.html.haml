@@ -10,13 +10,13 @@
           = icon('fas', 'cog', class: 'icon2')
 
   .groups
-    - current_user.groups.each do |group|
+    - current_user.groups.each do |grou|
       .group
-        = link_to group_messages_path(group) do
+        = link_to group_messages_path(grou) do
           .group__name
-            = group.name
+            = grou.name
           .group__message
-            = group.show_last_message
+            = grou.show_last_message
              
       
         
