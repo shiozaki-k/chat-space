@@ -15,16 +15,16 @@
         
   .messages
     = render @messages 
-    -# .message
-    -#   .upper-info
-    -#     .talker
-    -#     .data
-    -#     .text
+    .message
+      .upper-message
+        .upper-message__user-name
+        .upper-message__date
+      .lower-message
       
   .form
     = form_for [ @group, @message] do |f|
       .input-box
-        = f.text_field :content, placeholder: 'type a message'
+        = f.text_field :content, placeholder: '  type a message'
         .image
           = f.label :image, class: 'new_message__image' do
             = icon('fas', 'image', class: 'input-box')    
