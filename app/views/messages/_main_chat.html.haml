@@ -4,22 +4,22 @@
       %h3.group
         = @group.name
       %ul.main-header__left-box__member-list
-        .p Member:
+        Member:
         %li.group_users
           - @group.users.each do |user|
             = user.name
   
     .edit-btn
       = link_to edit_group_path(@group) do
-        .h1 EDIT
+        Edit
         
   .messages
     = render @messages 
-    .message
-      .upper-info
-        .talker
-        .data
-        .text
+    -# .message
+    -#   .upper-info
+    -#     .talker
+    -#     .data
+    -#     .text
       
   .form
     = form_for [ @group, @message] do |f|
