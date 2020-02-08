@@ -84,7 +84,7 @@
   .form{
     height: 90px;
     width: calc( 100vw - 300px );
-    background-color: #d2d2d2;
+    background-color: #dddddd;
     padding:  20px 40px;
     display: flex;
     position: fixed;
@@ -102,7 +102,7 @@
       #message_content {
         width: 100%;
       }
-      .image{
+      .new_message__image{
         font-size: 1.3rem;
         position: absolute;
         top: 15px;
@@ -119,6 +119,7 @@
       width:100px;
       margin: 0 10px;
       color: white;
+      cursor: pointer;
     }
   } 
 }
