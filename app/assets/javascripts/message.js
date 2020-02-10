@@ -78,6 +78,7 @@ $(function(){
     data: {id: last_message_id}
   })
   .done(function(messages) {
+    console.log(messages)
     if (messages.length !== 0) {
     var insertHTML = '';
       //配列messagesの中身一つ一つを取り出し、HTMLに変換したものを入れ物に足し合わせる
@@ -95,6 +96,6 @@ $(function(){
   });
 };
 if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-  setInterval(reloadMessages, 2000);
+  setInterval(reloadMessages, 7000);
 }
 })
